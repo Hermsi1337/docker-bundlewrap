@@ -7,7 +7,12 @@ RUN         apk add --no-cache \
                 musl-dev \
                 libffi-dev \
                 openssl-dev \
-                gcc  && \
+                gcc  \
+                file \
+                dpkg \
+                shadow \
+                pacman \
+                && \
             pip install --no-cache-dir bundlewrap
 
 WORKDIR     "/repository"
