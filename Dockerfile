@@ -14,7 +14,7 @@ RUN         apk add --no-cache  \
                 pacman          \
                 git             \
                 &&              \
-            pip install --no-cache-dir bundlewrap Jinja2
+            pip install --no-cache-dir bundlewrap
 
 WORKDIR     "/repository"
 
