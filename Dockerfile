@@ -6,7 +6,6 @@ RUN         apk add --update \
                 openssh-client \
                 musl-dev \
                 libffi-dev \
-                libssl-dev \
                 openssl-dev \
                 gcc  && \
             pip install --no-cache-dir bundlewrap
