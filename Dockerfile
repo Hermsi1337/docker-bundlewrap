@@ -14,9 +14,12 @@ RUN         apk add --no-cache  \
                 shadow          \
                 pacman          \
                 git             \
+                tini            \
                 &&              \
             pip install --no-cache-dir bundlewrap
 
+COPY        entrypoint.sh /entrypoint
+
 WORKDIR     "/repository"
 
-ENTRYPOINT  ["bw"]
+ENTRYPOINT  ["/entrypoint"]
