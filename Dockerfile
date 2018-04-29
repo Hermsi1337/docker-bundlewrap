@@ -15,6 +15,7 @@ RUN         apk add --no-cache  \
                 pacman          \
                 git             \
                 tini            \
+                bash            \
                 &&              \
             pip install --no-cache-dir bundlewrap
 
