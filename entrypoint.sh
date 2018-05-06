@@ -29,7 +29,7 @@ isCommand() {
 # check if the first argument passed in looks like a flag
 if [ "$(printf %c "$1")" = '-' ]; then
   set -- /sbin/tini -- bw "$@"
-# check if the first argument passed in is composer
+# check if the first argument passed in is bundlewrap
 elif [ "$1" = 'bw' ]; then
   set -- /sbin/tini -- "$@"
 # check if the first argument passed in matches a known command
