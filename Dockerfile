@@ -17,7 +17,7 @@ RUN         apk add --no-cache  \
                 tini            \
                 bash            \
                 &&              \
-            pip install --no-cache-dir bundlewrap
+            pip install --no-cache-dir requests bundlewrap
 
 COPY        entrypoint.sh /entrypoint
 
